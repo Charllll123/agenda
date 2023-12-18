@@ -1,0 +1,106 @@
+:root {
+    --alice-blue: #dcedffff;
+    --powder-blue: #94b0daff;
+    --cool-gray: #8f91a2ff;
+    --davys-gray: #505a5bff;
+    --outer-space: #343f3eff;
+
+    --font-main: 'Chomixi3D-Regular';
+    --font-text: 'Roboto-Italic';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cool-gray); /* Cambiado a un color más claro */
+    color: var(--alice-blue);
+    font-family: var(--font-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--davys-gray); /* Cambiado a un color más oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--davys-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--alice-blue);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: var(--cool-gray);
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--powder-blue);
+}
+
+footer {
+    background-color: var(--davys-gray);
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--alice-blue);
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff;
+    line-height: 1;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.snowflake-solid {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+}
